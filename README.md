@@ -82,3 +82,7 @@ sendBroadcast(intent);
 ```
 
 Don’t forget to add the above action in the intent filter tag of the manifest or programmatically.
+
+<br></br>
+<a href="url"><img src="https://github.com/sambhaji213/Broadcast-Receiver/blob/master/screenshot/device.png" align="left" height="480" width="300"></a>
+<a href="url"><img src="https://github.com/sambhaji213/Broadcast-Receiver/blob/master/screenshot/device1.png" align="left" height="480" width="300"></a>
