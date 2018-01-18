@@ -43,10 +43,10 @@ A BroadcastReceiver can be registered in two ways.
 1. By defining it in the AndroidManifest.xml file as shown below.
 
 ```java
-<receiver android:name=".ConnectionReceiver" >
-             <intent-filter>
-                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-             </intent-filter>
+<receiver android:name=".ConnectionReceiver">
+    <intent-filter>
+         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    </intent-filter>
 </receiver>
 ```
 
@@ -77,8 +77,8 @@ protected void onPause() {
 The following snippet is used to send an intent to all the related BroadcastReceivers.
 ```java
 Intent intent = new Intent();
-      intent.setAction("com.journaldev.CUSTOM_INTENT");
-      sendBroadcast(intent);
+intent.setAction("com.journaldev.CUSTOM_INTENT");
+sendBroadcast(intent);
 ```
 
 Don’t forget to add the above action in the intent filter tag of the manifest or programmatically.
